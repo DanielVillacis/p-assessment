@@ -45,13 +45,23 @@ namespace TestProgi.Application.Services
 
         private decimal CalculerFraisAssociation(decimal prix)
         {
-            if (prix <= 0) return 0;
-            if (prix <= 500m) return 5m;
-            if (prix <= 1000m) return 10m;
-            if (prix <= 3000m) return 15m;
-            return 20m;
+            switch (prix)
+            {
+                case <= 0:
+                    return 0m;
+                case <= 500:
+                    return 5m;
+                case <= 1000m:
+                    return 10m;
+                case <= 3000m:
+                    return 15m;
+                default:
+                    return 20m;
+            }
         }
 
+
+        // TODO: refactor this
         public class CalculResultat
         {
             public decimal PrixBase { get; set; }

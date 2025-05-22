@@ -6,4 +6,3 @@ namespace TestProgi.Application.DTOs
         public decimal Montant { get; set; }
     }
 }
-

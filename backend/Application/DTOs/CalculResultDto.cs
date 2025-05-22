@@ -2,7 +2,7 @@
 
 namespace TestProgi.Application.DTOs
 {
-    public class CalculResultDto
+    public class CalculResultDto    // TODO : utiliser les dto a la place de manipuler le domaine directement
     {
         public string? Marque { get; set; }
         public string? Modele { get; set; }

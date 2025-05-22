@@ -22,13 +22,20 @@ namespace TestProgi.API.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-                
-            var typeVehicule = request.TypeVehicule.Equals("deluxe", StringComparison.OrdinalIgnoreCase) 
-                ? TypeVehicule.Deluxe 
+
+            var typeVehicule = request.TypeVehicule.Equals("deluxe", StringComparison.OrdinalIgnoreCase)
+                ? TypeVehicule.Deluxe
                 : TypeVehicule.Ordinaire;
-                
+
             var resultat = _calculateurService.CalculerFrais(request.PrixBase, typeVehicule);
             return Ok(resultat);
+        }
+
+        [HttpGet("types-vehicules")]
+        public ActionResult<IEnumerable<string>> GetVehicleTypes()
+        {
+            var types = Enum.GetValues(typeof(TypeVehicule)).Cast<TypeVehicule>().Select(t => t.ToString()).ToList();
+            return Ok(types);
         }
     }
 

@@ -213,3 +213,4 @@
 /Users/danielvillacis/RiderProjects/Progi-Assessment/backend/obj/Debug/net8.0/TestProgi.pdb
 /Users/danielvillacis/RiderProjects/Progi-Assessment/backend/obj/Debug/net8.0/TestProgi.genruntimeconfig.cache
 /Users/danielvillacis/RiderProjects/Progi-Assessment/backend/obj/Debug/net8.0/ref/TestProgi.dll
+/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/obj/Debug/net8.0/TestProgi.sourcelink.json
