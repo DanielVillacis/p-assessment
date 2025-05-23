@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
 });
 
 // App services config
-builder.Services.AddSingleton<CalculateurDeFraisService>();
+builder.Services.AddSingleton<ICalculateurDeFraisService, CalculateurDeFraisService>();
 
 var app = builder.Build();
 

@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "GEO5zKi0V8qRY9JtMsaa3duoMpaQxciv0K6fD8qHkkw=",
+  "Hash": "BWzZLoBD+HPPO3NoBlvKZ6Q7cC5AE4q+z18VmDeg5PE=",
   "Source": "TestProgi",
   "BasePath": "_content/TestProgi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

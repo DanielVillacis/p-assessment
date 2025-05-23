@@ -5,7 +5,7 @@ using TestProgi.Domain.Models;
 
 namespace TestProgi.Services
 {
-    public class CalculateurDeFraisService
+    public class CalculateurDeFraisService : ICalculateurDeFraisService
     {
         private const decimal FraisEntreposage = 100m;
 

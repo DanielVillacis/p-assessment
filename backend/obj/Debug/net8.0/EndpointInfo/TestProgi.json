@@ -1,0 +1,168 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "TestProgi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/CalculFrais/calculer": {
+      "post": {
+        "tags": [
+          "CalculFrais"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalculFraisRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalculFraisRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalculFraisRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalculResultat"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalculResultat"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalculResultat"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/CalculFrais/types-vehicules": {
+      "get": {
+        "tags": [
+          "CalculFrais"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CalculFraisRequest": {
+        "required": [
+          "prixBase",
+          "typeVehicule"
+        ],
+        "type": "object",
+        "properties": {
+          "prixBase": {
+            "minimum": 0.01,
+            "type": "number",
+            "format": "double"
+          },
+          "typeVehicule": {
+            "$ref": "#/components/schemas/TypeVehicule"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CalculResultat": {
+        "required": [
+          "detailsFrais"
+        ],
+        "type": "object",
+        "properties": {
+          "prixBase": {
+            "type": "number",
+            "format": "double"
+          },
+          "detailsFrais": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FraisDetail"
+            },
+            "nullable": true
+          },
+          "totalFrais": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "total": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FraisDetail": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "montant": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TypeVehicule": {
+        "enum": [
+          "Ordinaire",
+          "Deluxe"
+        ],
+        "type": "string"
+      }
+    }
+  }
+}

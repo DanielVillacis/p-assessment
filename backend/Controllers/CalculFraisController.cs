@@ -10,8 +10,8 @@ namespace TestProgi.Controllers
     [Route("api/[controller]")]
     public class CalculFraisController : ControllerBase
     {
-        private readonly CalculateurDeFraisService _calculateurService;
-        public CalculFraisController(CalculateurDeFraisService calculateurService)
+        private readonly ICalculateurDeFraisService _calculateurService;
+        public CalculFraisController(ICalculateurDeFraisService calculateurService)
         {
             _calculateurService = calculateurService;
         }
@@ -38,7 +38,7 @@ namespace TestProgi.Controllers
     public class CalculFraisRequest
     {
         [Required]
-        [System.ComponentModel.DataAnnotations.Range(0.01, double.MaxValue, ErrorMessage = "Le prix doit être supérieur à 0")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Le prix doit être supérieur à 0")]
         public decimal PrixBase { get; set; }
 
         [Required]

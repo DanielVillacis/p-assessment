@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj": {}
+    "C:\\Users\\daniv\\Desktop\\p-assessment\\backend\\TestProgi.csproj": {}
   },
   "projects": {
-    "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj": {
+    "C:\\Users\\daniv\\Desktop\\p-assessment\\backend\\TestProgi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj",
+        "projectUniqueName": "C:\\Users\\daniv\\Desktop\\p-assessment\\backend\\TestProgi.csproj",
         "projectName": "TestProgi",
-        "projectPath": "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj",
-        "packagesPath": "/Users/danielvillacis/.nuget/packages/",
-        "outputPath": "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/obj/",
+        "projectPath": "C:\\Users\\daniv\\Desktop\\p-assessment\\backend\\TestProgi.csproj",
+        "packagesPath": "C:\\Users\\daniv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daniv\\Desktop\\p-assessment\\backend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/danielvillacis/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\daniv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,7 +53,7 @@
           "dependencies": {
             "FluentAssertions": {
               "target": "Package",
-              "version": "[6.12.0, )"
+              "version": "[8.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -64,7 +71,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[8.1.1, )"
+              "version": "[8.1.2, )"
             }
           },
           "imports": [
@@ -86,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/danielvillacis/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
