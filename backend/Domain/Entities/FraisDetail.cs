@@ -4,7 +4,7 @@ namespace TestProgi.Domain.Entities
 {
     public class FraisDetail
     {
-        public string? Description { get; private set; }
+        public string Description { get; private set; }
         public decimal Montant { get; private set; }
 
         public FraisDetail(string description, decimal montant)

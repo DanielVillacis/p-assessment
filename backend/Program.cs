@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using TestProgi.Application.Services;
+using TestProgi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
