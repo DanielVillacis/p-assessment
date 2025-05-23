@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj": {}
+    "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/UnitTests/UnitTests.csproj": {}
   },
   "projects": {
     "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj": {
@@ -82,6 +82,87 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/danielvillacis/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/UnitTests/UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/UnitTests/UnitTests.csproj",
+        "projectName": "UnitTests",
+        "projectPath": "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/UnitTests/UnitTests.csproj",
+        "packagesPath": "/Users/danielvillacis/.nuget/packages/",
+        "outputPath": "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/danielvillacis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj": {
+                "projectPath": "/Users/danielvillacis/RiderProjects/Progi-Assessment/backend/TestProgi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
